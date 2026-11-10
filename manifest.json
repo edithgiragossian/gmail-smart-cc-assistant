@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Smart CC Assistant",
+  "version": "1.0.0",
+  "description": "Gmail Smart CC demo with fictional staff-to-supervisor mappings and diagnostic status.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
